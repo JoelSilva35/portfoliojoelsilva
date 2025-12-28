@@ -1,365 +1,391 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible contentIE=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortfolioJoel</title>
-    <link rel="stylesheet" href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css'>
+
+    <title>Portfolio — Joel Cardoso</title>
+
+    <!-- Ícones Boxicons -->
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css">
+
+    <!-- Estilo principal -->
     <link rel="stylesheet" href="./acesso/css/estilo.css">
 </head>
 <body>
-    <header class="active">
-        <a href="#" class="logo">Joel.</a>
+  <header class="header active">
+    <a href="#" class="logo">Joel<span>.</span></a>
 
-        <i class='bx bx-menu' id="menu-icon"></i>
+    <button class="menu-toggle" id="menu-icon" aria-label="Abrir menu">
+        <i class='bx bx-menu'></i>
+    </button>
 
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Serviços</a>
-            <a href="#">Sobre mim</a>
-            <a href="#">Projetos</a>
-            <a href="#">Contatos</a>
-        </nav>
-    </header>
+    <nav class="navbar">
+        <a href="#" class="nav-link active">Home</a>
+        <a href="#services" class="nav-link">Serviços</a>
+        <a href="#about" class="nav-link">Sobre mim</a>
+        <a href="#projects" class="nav-link">Projetos</a>
+        <a href="#contact" class="nav-link">Contatos</a>
+    </nav>
+</header>
+  
+ <!-- Bars Background -->
+<div class="bars-box active">
+    <div class="bar" style="--i:6"></div>
+    <div class="bar" style="--i:5"></div>
+    <div class="bar" style="--i:4"></div>
+    <div class="bar" style="--i:3"></div>
+    <div class="bar" style="--i:2"></div>
+    <div class="bar" style="--i:1"></div>
+</div>
+  
+<!-- Home Section -->
+<section id="home" class="home active">
+    <div class="home-detail">
+        <h1>Joel Cardoso</h1>
 
-    <!--Bars Background-->   
-    <div class="bars-box active">
-        <div class="bar" style="--i:6"></div>
-        <div class="bar" style="--i:5"></div>
-        <div class="bar" style="--i:4"></div>
-        <div class="bar" style="--i:3"></div>
-        <div class="bar" style="--i:2"></div>
-        <div class="bar" style="--i:1"></div>
+        <h2>Desenvolvedor
+            <span style="--i:4;" data-text="Front-end">Front-end</span>
+            <span style="--i:3;" data-text="Back-end">Back-end</span>
+            <span style="--i:2;" data-text="E-commerce">E-commerce</span>
+            <span style="--i:1;" data-text="APIs">APIs</span>
+        </h2>
+
+        <p>
+            Sou desenvolvedor web apaixonado por tecnologia, design e boas experiências digitais.
+            Gosto de transformar ideias em interfaces funcionais, responsivas e modernas, sempre
+            buscando escrever um código limpo, eficiente e de fácil manutenção.
+        </p>
+
+        <div class="btn-sci">
+            <a href="#" class="btn">Download CV</a>
+
+            <div class="sci">
+                <a href="https://github.com/JoelSilva35">
+                    <i class='bx bxl-github'></i>
+                </a>
+                <a href="https://www.linkedin.com/in/joel-cardoso-da-silva">
+                    <i class='bx bxl-linkedin'></i>
+                </a>
+                <a href="https://t.me/JoelSilva35">
+                    <i class='bx bxl-telegram'></i>
+                </a>
+                <a href="https://wa.me/559181403117">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+            </div>
+        </div>
     </div>
 
-<!--home section -->
-    <section class="home active">
-        <div class="home-detail">
-            <h1>Joel Cardoso</h1>
-            <h2>Desenvolvedor
-                <span style="--i:4;" data-text="Front-end">Front-end</span>
-                <span style="--i:3;" data-text="Back-end">Back-end</span>
-                <span style="--i:2;" data-text="E-commerce">E-commerce</span>
-                <span style="--i:1;" data-text="APIs">APIs</span>
-            </h2>
-            <p>Sou desenvolvedor web apaixonado por tecnologia, design e boas experiências digitais. Gosto de transformar ideias em interfaces funcionais, responsivas e modernas, sempre buscando escrever um código limpo, eficiente e de fácil manutenção.</p>
-            <div class="btn-sci">
-                <a href="#" class="btn">Download CV</a>
-                <div class="sci">
-                    <a href="https://github.com/JoelSilva35"><i class='bx bxl-github'></i></a>
-                    <a href="https://www.linkedin.com/in/joel-cardoso-da-silva-9a33a9112?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i></a>
-                    <a href="https://t.me/JoelSilva35"><i class='bx bxl-telegram'></i></a>
-                    <a href="https://wa.me/qr/RL43YZJRN63SG1"><i class='bx bxl-whatsapp' ></i></a>
-                </div>
+    <div class="home-img">
+        <div class="img-box">
+            <div class="img-item">
+                <img src="./acesso/img/homeimg1.png" alt="Foto ilustrativa Joel Cardoso">
             </div>
         </div>
-
-        <div class="home-img">
-            <div class="img-box">
-                <div class="img-item">
-                    <img src="./acesso/img/homeimg1.png">
-                </div>
-            </div>
-        </div>
-    </section>
-
-<!--serviços section-->
-    <section class="Services">
+    </div>
+</section>
+  
+<!-- Serviços Section -->
+<section id="about" class="services">
     <h2 class="heading">Meus <span>Serviços</span></h2>
+
     <div class="services-container">
+
         <div class="services-box">
-            <div class="icon"> 
+            <div class="icon">
                 <i class='bx bxl-html5'></i>
                 <i class='bx bxl-css3'></i>
                 <i class='bx bxl-javascript'></i>
                 <i class='bx bxl-react'></i>
-                <a href="#"><i class='bx bx-arrow-back' ></i></a>
             </div>
             <h3>Front-end</h3>
-            <p>Construção de interfaces responsivas e intuitivas usando HTML, CSS, JavaScript e React, garantindo desempenho, usabilidade e design moderno.</p>
+            <p>
+                Construção de interfaces responsivas e intuitivas usando HTML, CSS, JavaScript e React.
+                Foco em desempenho, usabilidade e design moderno.
+            </p>
         </div>
 
-         <div class="services-box">
+        <div class="services-box">
             <div class="icon">
-                <i class='bx bx-code-alt'></i>
-                <i class='bx bx-code-alt'></i>
-                <i class='bx bx-code-alt'></i>
-                <i class='bx bx-code-alt'></i>
-                <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <i class='bx bxl-php'></i>
+                <i class='bx bxl-nodejs'></i>
+                <i class='bx bxl-typescript'></i>
+                <i class='bx bxl-tailwind-css'></i>
             </div>
             <h3>Back-end</h3>
-            <p>Desenvolvo back-end com Node.js, Laravel e bancos SQL, criando APIs seguras, performáticas e bem estruturadas. Trabalhando com autenticação, integração de serviços e arquitetura escalável.</p>
+            <p>
+                Desenvolvimento com Node.js, Laravel e bancos SQL. Criação de APIs seguras e escaláveis,
+                integração de serviços e arquitetura bem estruturada.
+            </p>
         </div>
 
-         <div class="services-box">
+        <div class="services-box">
             <div class="icon">
-                <i class='bx bx-palette'></i>
-                <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <i class='bx  bx-shopping-bag'></i>
+                <i class='bx  bx-cart'></i>                 
+                <i class='bx  bx-store'></i>
+                <i class='bx  bx-qr'></i> 
             </div>
             <h3>E-commerce</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessititabus  ab commit.</p>
+            <p>
+                Desenvolvimento de lojas virtuais, integração com gateways de pagamento,
+                implementação de carrinho, checkout e otimização de vendas.
+            </p>
         </div>
 
-         <div class="services-box">
+        <div class="services-box">
             <div class="icon">
                 <i class='bx bx-trending-up'></i>
-                <a href="#"><i class='bx bx-arrow-back' ></i></a>
             </div>
             <h3>APIs</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessititabus  ab commit.</p>
+            <p>
+                Criação e consumo de APIs RESTful, autenticação JWT, comunicação entre sistemas
+                e integração com serviços externos.
+            </p>
         </div>
 
-         <div class="services-box">
+        <div class="services-box">
             <div class="icon">
-                <i class='bx bx-slideshow'></i>
-                <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <i class='bx bxl-python'></i>
             </div>
             <h3>Python</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessititabus  ab commit.</p>
+            <p>
+                Construção de automações, scripts, bots e soluções inteligentes usando Python.
+            </p>
         </div>
 
-         <div class="services-box">
+        <div class="services-box">
             <div class="icon">
-                <i class='bx bx-camera'></i>
-                <a href="#"><i class='bx bx-arrow-back' ></i></a>
+                <i class='bx bxl-postgresql' ></i>
             </div>
-            <h3>Banco de dados</h3>
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Necessititabus  ab commit.</p>
+            <h3>Banco de Dados</h3>
+            <p>
+                Modelagem, criação e manutenção de bancos SQL e mySQL. Consultas otimizadas e
+                organização eficiente dos dados.
+            </p>
         </div>
+
     </div>
-    </section>
-
-<!--sobre mim section-->
-    <section class="resume">
+</section>
+  
+<!-- Sobre mim / Resume Section -->
+<section id="skills" class="resume">
     <div class="resume-container">
+
+        <!-- Menu Lateral -->
         <div class="resume-box">
-            <h2>Porque me contratar?</h2>
-            <p class="desc">Sou um desenvolvedor proativo e orientado a resultados, capaz de transformar desafios em soluções eficientes. Entrego qualidade, inovação e compromisso em cada projeto.</p>
-                <button class="resume-btn active">Experiências</button>
-                <button class="resume-btn">Educação</button>
-                <button class="resume-btn">Habilildades</button>
-                <button class="resume-btn">Sobre Mim</button>
+            <h2>Por que me contratar?</h2>
+            <p class="desc">
+                Sou um desenvolvedor proativo e orientado a resultados, capaz de transformar desafios
+                em soluções eficientes. Entrego qualidade, inovação e compromisso em cada projeto.
+            </p>
+
+            <button class="resume-btn active">Experiências</button>
+            <button class="resume-btn">Educação</button>
+            <button class="resume-btn">Habilidades</button>
+            <button class="resume-btn">Sobre Mim</button>
         </div>
 
+        <!-- Conteúdo Dinâmico -->
         <div class="resume-box">
+
+            <!-- EXPERIÊNCIAS -->
             <div class="resume-detail experience active">
                 <h2 class="heading"><span>Experiências</span></h2>
                 <p class="desc">Meu histórico profissional</p>
+
                 <div class="resume-list">
+
                     <div class="resume-item">
                         <p class="year">01/2021 - 09/2025</p>
                         <h3>Vendedor</h3>
-                        <p class="company">Atalaia Materiais de Construções</p>
-                        <p>Atender o cliente na loja e oferecer opções deacordo com as expectativas.</p>
+                        <p class="company">Atalaia Materiais de Construção</p>
+                        <p>Atendimento direto ao cliente, oferecendo produtos conforme suas necessidades.</p>
                     </div>
+
                     <div class="resume-item">
                         <p class="year">10/2011 - 06/2015</p>
                         <h3>Atendente</h3>
                         <p class="company">Pizza Hut</p>
-                        <p>Atendimento ao público para servi comidas e bebidas comqualidade.</p>
+                        <p>Atendimento ao público, garantindo qualidade e bom relacionamento com o cliente.</p>
                     </div>
+
                     <div class="resume-item">
                         <p class="year">03/2008 - 01/2009</p>
-                        <h3>Auxiliar de escritório</h3>
+                        <h3>Auxiliar de Escritório</h3>
                         <p class="company">Prefeitura de Ananindeua</p>
-                        <p>Organização de documentos, armazenamento dearquivos para acesso posteriores.</p>
-                    </div>                 
+                        <p>Organização de documentos, digitalização e apoio administrativo geral.</p>
+                    </div>
+
                 </div>
             </div>
 
+            <!-- EDUCAÇÃO -->
             <div class="resume-detail education">
                 <h2 class="heading"><span>Educação</span></h2>
-                <p class="desc">Um resumo sobre ensino e qualificações</p>
+                <p class="desc">Resumo da minha formação e qualificações</p>
+
                 <div class="resume-list">
                     <div class="resume-item">
-                        <p class="year">01/ 2015 - 01/ 2016</p>
+                        <p class="year">2015 - 2016</p>
                         <h3>Ensino Médio</h3>
-                        <p class="company">CEEJA- Centro de Educação de Jovens eAdulto Prof. Luiz Octávio Pereira</p>
-                    </div>   
-                    
+                        <p class="company">CEEJA - Centro de Educação de Jovens e Adultos Prof. Luiz Octávio Pereira</p>
+                    </div>
+
                     <div class="resume-item">
-                        <p class="year">10/ 2025 - 11/ 2025</p>
-                        <h3>Ingles Básico A2</h3>
-                        <p class="company">Sest Senat</p>
+                        <p class="year">10/2025 - 11/2025</p>
+                        <h3>Inglês Básico A2</h3>
+                        <p class="company">SEST SENAT</p>
                     </div>
                 </div>
             </div>
 
+            <!-- HABILIDADES -->
             <div class="resume-detail skill">
                 <h2 class="heading"><span>Habilidades</span></h2>
-                <p class="desc">Descrevendo minhas competências em áreas específicas</p>
-                <div class="resume-list">
-                    <div class="resume-item">
-                        <i class='bx bxl-html5'></i>
-                        <span>HTML5</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-css3'></i>
-                        <span>CSS3</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-javascript'></i>
-                        <span>JavaScript</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-react'></i>
-                        <span>React js</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-tailwind-css'></i>
-                        <span>Tailwind CSS</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-php'></i>
-                        <span>PHP</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-python'></i>
-                        <span>Python</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-typescript'></i>
-                        <span>TypeScript</span>
-                    </div>
-                    <div class="resume-item">
-                        <i class='bx bxl-nodejs'></i>
-                        <span>Node JS</span>
-                    </div>
+                <p class="desc">Competências técnicas principais</p>
+
+                <div class="resume-list skills-grid">
+                    <div class="resume-item"><i class='bx bxl-html5'></i><span>HTML5</span></div>
+                    <div class="resume-item"><i class='bx bxl-css3'></i><span>CSS3</span></div>
+                    <div class="resume-item"><i class='bx bxl-javascript'></i><span>JavaScript</span></div>
+                    <div class="resume-item"><i class='bx bxl-react'></i><span>React.js</span></div>
+                    <div class="resume-item"><i class='bx bxl-tailwind-css'></i><span>Tailwind CSS</span></div>
+                    <div class="resume-item"><i class='bx bxl-php'></i><span>PHP</span></div>
+                    <div class="resume-item"><i class='bx bxl-python'></i><span>Python</span></div>
+                    <div class="resume-item"><i class='bx bxl-typescript'></i><span>TypeScript</span></div>
+                    <div class="resume-item"><i class='bx bxl-nodejs'></i><span>Node.js</span></div>
                 </div>
             </div>
 
+            <!-- SOBRE MIM -->
             <div class="resume-detail about">
-                <h2 class="heading"><span>Sobre mim</span></h2>
-                <p class="desc">Sou uma pessoa dedicada, curiosa e sempre em busca de crescimento. Gosto de aprender coisas novas, enfrentar desafios e encontrar soluções criativas para cada situação. Valorizo o trabalho bem feito, a honestidade e o compromisso com o que faço. Acredito que com esforço e vontade de evoluir, é possível alcançar qualquer objetivo.</p>
-                <div class="resume-list">
-                    <div class="resume-item">
-                        <p>Nome <span>Joel Cardoso da Silva</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Idade <span>36 anos</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Genero <span>Masculino</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Estado Civil <span>Casado</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Cidade <span>Ananindeua-PA</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Nacionalidade <span>Brasileiro</span></p>
-                    </div>
-                    <div class="resume-item">
-                        <p>Celular <span>+55(91)98837-8088</span></p>
-                    </div>
+                <h2 class="heading"><span>Sobre Mim</span></h2>
+                <p class="desc">
+                    Sou uma pessoa dedicada, curiosa e sempre em busca de aprendizado. Gosto de resolver
+                    problemas, enfrentar desafios e criar soluções criativas. Acredito na honestidade,
+                    no esforço e no trabalho bem feito.
+                </p>
+
+                <div class="resume-list about-list">
+                    <div class="resume-item"><p>Nome <span>Joel Cardoso da Silva</span></p></div>
+                    <div class="resume-item"><p>Idade <span>36 anos</span></p></div>
+                    <div class="resume-item"><p>Gênero <span>Masculino</span></p></div>
+                    <div class="resume-item"><p>Estado Civil <span>Casado</span></p></div>
+                    <div class="resume-item"><p>Cidade <span>Ananindeua - PA</span></p></div>
+                    <div class="resume-item"><p>Nacionalidade <span>Brasileiro</span></p></div>
+                    <div class="resume-item"><p>Celular <span>+55 (91) 98140-3117</span></p></div>
                 </div>
             </div>
+
         </div>
     </div>
-    </section>
-
+</section>
+  
 <!--projetos section-->
-   <section class="project">
+<section id="projects" class="project">
     <h2 class="heading">Meus <span>Projetos</span></h2>
+
     <div class="project-container">
+
         <div class="project-box">
+            <!-- Projeto 01 -->
             <div class="project-detail active">
                 <p class="numb">01</p>
-                <h3>Clínica de reabilitação oral - OdontoLove</h3>
-                <p>lorem, ipsum dolor sit amet neccite elite. Valell my son luck in have, arroz com jeilçao</p>
+                <h3>Clínica de Reabilitação Oral - OdontoLove</h3>
+                <p>Website moderno e responsivo desenvolvido com HTML5, CSS3 e JavaScript, focado em experiência do usuário e navegação intuitiva para agendamento e apresentação de serviços odontológicos.</p>
                 <div class="tech">
                     <p>HTML5, CSS3, JavaScript</p>
                 </div>
                 <div class="live-github">
                     <a href="https://joelsilva35.github.io/odontolove-site/"><i class='bx bx-arrow-back'></i><span>Live Projeto</span></a>
-                    <a href="https://github.com/JoelSilva35/odontolove-site.git"><i class='bx bxl-github'></i><span>Github repository</span></a>
+                    <a href="https://github.com/JoelSilva35/odontolove-site.git"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                 </div>
             </div>
+
+            <!-- Projeto 02 -->
             <div class="project-detail">
                 <p class="numb">02</p>
-                <h3>Projeto Front-end</h3>
-                <p>lorem, ipsum dolor sit amet neccite elite. Valell my son luck in have, arroz com jeilçao</p>
+                <h3>Dashboard Front-end</h3>
+                <p>Aplicação front-end construída com React, Tailwind e TypeScript, trazendo componentes otimizados, interface dinâmica e foco em performance.</p>
                 <div class="tech">
-                    <p>Tailwind, Typescript, React js</p>
+                    <p>React JS, TypeScript, Tailwind CSS</p>
                 </div>
                 <div class="live-github">
                     <a href="#"><i class='bx bx-arrow-back'></i><span>Live Projeto</span></a>
-                    <a href="#"><i class='bx bxl-github'></i><span>Github repository</span></a>
+                    <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                 </div>
             </div>
+
+            <!-- Projeto 03 -->
             <div class="project-detail">
                 <p class="numb">03</p>
-                <h3>Projeto Back-end</h3>
-                <p>lorem, ipsum dolor sit amet neccite elite. Valell my son luck in have, arroz com jeilçao</p>
+                <h3>API de Autenticação</h3>
+                <p>Sistema back-end completo com cadastro, login, JWT e integração com banco de dados, ideal para aplicações modernas e escaláveis.</p>
                 <div class="tech">
                     <p>PHP, Laravel</p>
                 </div>
                 <div class="live-github">
                     <a href="#"><i class='bx bx-arrow-back'></i><span>Live Projeto</span></a>
-                    <a href="#"><i class='bx bxl-github'></i><span>Github repository</span></a>
+                    <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                 </div>
             </div>
+
+            <!-- Projeto 04 -->
             <div class="project-detail">
                 <p class="numb">04</p>
-                <h3>Projeto Full Stack</h3>
-                <p>lorem, ipsum dolor sit amet neccite elite. Valell my son luck in have, arroz com jeilçao</p>
+                <h3>Sistema Full Stack Completo</h3>
+                <p>Aplicação integrada com CRUD completo, API, banco de dados e interface responsiva que conecta front-end e back-end.</p>
                 <div class="tech">
-                    <p>React, JavaScript, SQL, Node js, HTML5, CSS3</p>
+                    <p>React, JavaScript, SQL, Node.js, HTML5, CSS3</p>
                 </div>
                 <div class="live-github">
                     <a href="#"><i class='bx bx-arrow-back'></i><span>Live Projeto</span></a>
-                    <a href="#"><i class='bx bxl-github'></i><span>Github repository</span></a>
+                    <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                 </div>
             </div>
+
+            <!-- Projeto 05 -->
             <div class="project-detail">
                 <p class="numb">05</p>
-                <h3>Projeto Python</h3>
-                <p>lorem, ipsum dolor sit amet neccite elite. Valell my son luck in have, arroz com jeilçao</p>
+                <h3>Jogo 2D em Python</h3>
+                <p>Projeto desenvolvido com PyGame, apresentando lógica de colisão, movimentação, pontuação e animações.</p>
                 <div class="tech">
-                    <p>PyGame</p>
+                    <p>Python, PyGame</p>
                 </div>
                 <div class="live-github">
                     <a href="#"><i class='bx bx-arrow-back'></i><span>Live Projeto</span></a>
-                    <a href="#"><i class='bx bxl-github'></i><span>Github repository</span></a>
+                    <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                 </div>
             </div>
+
+            <!-- Projeto 06 -->
             <div class="project-detail">
                 <p class="numb">06</p>
-                <h3>Projeto mobile</h3>
-                <p>lorem, ipsum dolor sit amet neccite elite. Valell my son luck in have, arroz com jeilçao</p>
+                <h3>Aplicativo Mobile</h3>
+                <p>Aplicativo desenvolvido com React Native e TypeScript, com foco em interface moderna e fluida.</p>
                 <div class="tech">
-                    <p>TypeScrip, React Native</p>
+                    <p>TypeScript, React Native</p>
                 </div>
                 <div class="live-github">
                     <a href="#"><i class='bx bx-arrow-back'></i><span>Live Projeto</span></a>
-                    <a href="#"><i class='bx bxl-github'></i><span>Github repository</span></a>
+                    <a href="#"><i class='bx bxl-github'></i><span>Github Repository</span></a>
                 </div>
             </div>
         </div>
 
+        <!-- Carrossel de imagens -->
         <div class="project-box">
             <div class="project-carousel">
                 <div class="img-slide">
-                    <div class="img-item">
-                        <img src="">
-                    </div>
-                     <div class="img-item">
-                        <img src="">
-                    </div>
-                     <div class="img-item">
-                        <img src="">
-                    </div>
-                     <div class="img-item">
-                        <img src="">
-                    </div>
-                     <div class="img-item">
-                        <img src="">
-                    </div>
-                     <div class="img-item">
-                        <img src="">
-                    </div>
+                    <div class="img-item"><img src="./acesso/img/pj1.jpg" alt=""></div>
+                    <div class="img-item"><img src="" alt=""></div>
+                    <div class="img-item"><img src="" alt=""></div>
+                    <div class="img-item"><img src="" alt=""></div>
+                    <div class="img-item"><img src="" alt=""></div>
+                    <div class="img-item"><img src="" alt=""></div>
                 </div>
             </div>
 
@@ -368,34 +394,39 @@
                 <button class="arrow-right"><i class='bx bx-chevron-right'></i></button>
             </div>
         </div>
-    </div>
-   </section>
 
+    </div>
+</section>
+  
 <!--contatos section-->
-   <section class="contact">
+<section id="contact" class="contact">
     <div class="contact-container">
+
         <div class="contact-box">
             <h2>Vamos trabalhar juntos!</h2>
-            <p class="desc">Aqui estão meus contatos para futuras propostas e oportunidades.</p>
+            <p class="desc">Aqui estão meus contatos para futuras oportunidades, parcerias e projetos.</p>
+
             <div class="contact-detail">
                 <i class='bx bxs-phone'></i>
                 <div class="detail">
                     <p>Telefone</p>
-                    <p>+55(91) 988378088</p>
+                    <p>+55 (91) 98140-3117</p>
                 </div>
             </div>
+
             <div class="contact-detail">
                 <i class='bx bxs-envelope'></i>
                 <div class="detail">
                     <p>Email</p>
-                    <p>Joelsilva252015@gmail.com</p>
+                    <p>joelsilva252015@gmail.com</p>
                 </div>
             </div>
+
             <div class="contact-detail">
                 <i class='bx bxs-map'></i>
                 <div class="detail">
-                    <p>Endereço</p>
-                    <p>Ananindeua-Pará-Brasil</p>
+                    <p>Localização</p>
+                    <p>Ananindeua — Pará, Brasil</p>
                 </div>
             </div>
         </div>
@@ -403,22 +434,24 @@
         <div class="contact-box">
             <form action="">
                 <h2 class="heading">Contate-<span>Me!</span></h2>
+
                 <div class="field-box">
                     <input type="text" placeholder="Nome" required>
                     <input type="email" placeholder="E-mail" required>
-                    <input type="number" placeholder="Telefone" required>
+                    <input type="tel" placeholder="Telefone" required>
                     <input type="text" placeholder="Assunto" required>
-                    <textarea name="" id="" placeholder="Sua Menssagem" required></textarea>
+                    <textarea placeholder="Sua Mensagem" required></textarea>
                 </div>
-                <button type="submit" class="btn">Enviar Menssagem</button>
+
+                <button type="submit" class="btn">Enviar Mensagem</button>
             </form>
         </div>
+
     </div>
-   </section>
+</section>
 
 
-
-<!--custom js-->
+<!-- Custom JS -->
     <script src="./acesso/javascript/script.js"></script>
 </body>
 </html>
